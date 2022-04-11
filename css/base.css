@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --primcolor: #F90716;
+}
+
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background: azure;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section{
+    position: relative;
+    width: 100%;
+}
+.section{
+    margin-bottom: 2rem;
+}
+
+.heading-div{
+    position: relative;
+    margin: 5% 0 0;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.main-heading{
+    position: relative;
+    padding: 1rem 0 1rem 1rem;
+    width: 100%;
+    height: auto;
+    font-size: 2.6rem;
+    border-left: 8px solid orangered;
+}
+
+.text-content{
+    position: relative;
+    padding: 1rem;
+}
+
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-logo{
+    position: relative;
+    width: 40px;
+    height: auto;
+    margin-right: 1rem;
+}
+.brand-name{
+    color: var(--primcolor);
+}
+.menu{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu a{
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+.menu a:hover{
+    text-shadow: 0 5px 4px rgb(185, 185, 185);
+}
+.cta{
+    position: relative;
+    padding: 0.75rem 0;
+    width: 125px;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(120deg, #FF5403, #F90716);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #FFF;
+}
+
+
+.chat-btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 10;
+}
+.call-btn{
+    position: fixed;
+    bottom: calc(3rem + 48px);
+    right: 2rem;
+    z-index: 10;
+}
+.whatsapp-img{
+    position: relative;
+    width: 48px;
+    height: auto;
+}
+.call-img{
+    position: relative;
+    width: 46px;
+    height: auto;
+}
+
+
+
+footer{
+    position: relative;
+    margin-top: auto;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+footer p{
+    font-size: .8rem;
+    color: darkslategray;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .main-heading{
+        font-size: 2rem;
+    }
+    
+    .nav-logo{
+        max-width: 30px;
+    }
+    .brand-name{
+        font-size: 1.25rem;
+    }
+    .menu{
+        position: absolute;
+        top: 10vh;
+        width: 90%;
+    }
+    .cta{
+        font-size: .8rem;
+    }
+
+
+
+}
